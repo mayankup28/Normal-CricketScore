@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Normal-CricketScore/static/css/main.345cdf17.css",
+    "main.js": "/Normal-CricketScore/static/js/main.81d8186c.js",
+    "static/js/787.635aedaa.chunk.js": "/Normal-CricketScore/static/js/787.635aedaa.chunk.js",
+    "index.html": "/Normal-CricketScore/index.html",
+    "main.345cdf17.css.map": "/Normal-CricketScore/static/css/main.345cdf17.css.map",
+    "main.81d8186c.js.map": "/Normal-CricketScore/static/js/main.81d8186c.js.map",
+    "787.635aedaa.chunk.js.map": "/Normal-CricketScore/static/js/787.635aedaa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.345cdf17.css",
+    "static/js/main.81d8186c.js"
+  ]
+}
