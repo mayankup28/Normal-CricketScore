@@ -1,0 +1,226 @@
+.teamName {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: aquamarine;
+    padding: 1px;
+}
+
+.teamName h3{
+    display: none;
+}
+
+.extra{
+    display: none;
+}
+
+.watch {
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+    height: 200px;
+}
+
+.watch h2 {
+    margin: 0 25px;
+}
+
+.playing {
+    position: relative;
+    left: -30px;
+    width: 200px;
+}
+
+.status {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.status h1 {
+    margin-bottom: 0;
+}
+
+.function {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 98%;
+}
+
+.function button {
+    /* padding: 10px 20px; */
+    border: none;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.function .single {
+    background-color: aqua;
+}
+
+.function .single:hover {
+    background-color: rgb(39, 225, 225);
+}
+
+.function .four {
+    background-color: rgb(61, 255, 47);
+}
+
+.function .four:hover {
+    background-color: rgb(52, 223, 39);
+}
+
+.function .six {
+    background-color: orange;
+}
+
+.function .six:hover {
+    background-color: rgb(224, 155, 28);
+}
+
+.function .wide{
+    background-color: gainsboro;
+}
+
+.function .wicket {
+    background-color: red;
+}
+
+.function .wicket:hover {
+    background-color: rgb(227, 43, 43);
+}
+
+.function .non {
+    background-color: red;
+}
+
+.function .non:hover {
+    background-color: rgb(228, 35, 35);
+}
+
+.fill {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fill input {
+    padding: 14px;
+    margin-right: 20px;
+}
+
+.fill h3 {
+    margin-right: 20px;
+    color: blueviolet;
+}
+
+
+/* Responsive  */
+
+@media screen and (max-width:884px) {
+
+    .teamName h2{
+        margin-left: 100px;
+    }
+
+    .teamName h3{
+        display: initial;
+    }
+    .status{
+        position: absolute;
+        top: -5px;
+        left: 10px;
+        height: 100px;
+        font-size: 10px;
+        display: none;
+    }
+
+    .watch{
+        font-size: 10px;
+        height: 100px;
+        margin-bottom: 60px
+    }
+
+    .playing{
+        position: absolute;
+        top: -10px;
+        left: 10px;
+    }
+
+    .six h1{
+        margin-left: 12px;
+    }
+
+    .run h1{
+        margin-left: 10px;
+    }
+
+    .ball h1{
+        margin-left: 7px;
+    }
+
+    .over h1{
+        margin-left: 2px;
+    }
+
+    .function button {
+        border: none;
+        width: 70px;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 10px;
+    }
+    
+    .function{
+        position: absolute;
+        margin-bottom: 100px;
+        top: 170px;
+        justify-content: space-around;
+    }
+
+    .fill{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .fill input {
+        padding: 9px;
+    }
+    
+    .fill h3 {
+        color: blueviolet;
+    }
+
+    .extra{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        top: 75px;
+        left: -100%;
+        transition: 0.4s;
+        z-index: 10;
+    }
+
+    .extra button{
+        border: none;
+        margin: 5px 0;
+        width: 120px;
+        padding: 10px;
+        background-color: rgb(248, 136, 9);
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+    }
+
+    .extra.active{
+        left: 0;
+    }
+}
