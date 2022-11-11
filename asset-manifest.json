@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Normal-CricketScore/static/css/main.345cdf17.css",
-    "main.js": "/Normal-CricketScore/static/js/main.81d8186c.js",
+    "main.css": "/Normal-CricketScore/static/css/main.025fbd8c.css",
+    "main.js": "/Normal-CricketScore/static/js/main.fa7729e8.js",
     "static/js/787.635aedaa.chunk.js": "/Normal-CricketScore/static/js/787.635aedaa.chunk.js",
     "index.html": "/Normal-CricketScore/index.html",
-    "main.345cdf17.css.map": "/Normal-CricketScore/static/css/main.345cdf17.css.map",
-    "main.81d8186c.js.map": "/Normal-CricketScore/static/js/main.81d8186c.js.map",
+    "main.025fbd8c.css.map": "/Normal-CricketScore/static/css/main.025fbd8c.css.map",
+    "main.fa7729e8.js.map": "/Normal-CricketScore/static/js/main.fa7729e8.js.map",
     "787.635aedaa.chunk.js.map": "/Normal-CricketScore/static/js/787.635aedaa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.345cdf17.css",
-    "static/js/main.81d8186c.js"
+    "static/css/main.025fbd8c.css",
+    "static/js/main.fa7729e8.js"
   ]
 }
