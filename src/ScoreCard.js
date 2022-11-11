@@ -59,6 +59,33 @@ function ScoreCard() {
         }
     }
 
+
+    function Two(){
+        Setrun(run + 2)
+        if (ball === 5) {
+            Setover(over + 1)
+            Setball(0)
+            Setstriker(nonStriker)
+            Setnonstriker(striker)
+        } else {
+            Setball(ball + 1)
+        }
+    }
+
+    function Three(){
+        Setrun(run + 3)
+        Setstriker(nonStriker)
+        Setnonstriker(striker)
+        if (ball === 5) {
+            Setover(over + 1)
+            Setball(0)
+            Setstriker(striker)
+            Setnonstriker(nonStriker)
+        } else {
+            Setball(ball + 1)
+        }
+    }
+
     function Wide(){
         Setrun(run+1)
     }
@@ -198,22 +225,29 @@ function ScoreCard() {
             </div>
 
             <div className={click?"extra active":"extra"}>
+                <div className="leftmenu">
+                <button onClick={Wide}>Wide</button>
+                <button onClick={Noball}>No-ball</button>
+                <button disabled={wicket === num-1} onClick={Wicket}>Wicket</button>
+                <button disabled={wicket === num-1} onClick={NonWicket}>Non-Striker Wicket</button>
                 <button onClick={MinusRun}>Run-1</button>
+                </div>
+
+                <div className="rightmenu">
                 <button onClick={MinusWicket}>Wicket-1</button>
                 <button onClick={MinusSix}>Six-1</button>
                 <button onClick={MinusFour}>Four-1</button>
-                <button onClick={Noball}>No-ball</button>
-                <button onClick={Wide}>Wide</button>
                 <button onClick={Balls}>Ball-1</button>
                 <button onClick={Overs}>Over-1</button>
+                </div>
             </div>
 
             <div className="function">
                 <button className='single' onClick={Single}>Single</button>
                 <button className='four' onClick={Four}>Four</button>
                 <button className='six' onClick={Six}>Six</button>
-                <button className='wicket' disabled={wicket === num-1} onClick={Wicket}>Wicket</button>
-                <button className='non' disabled={wicket === num-1} onClick={NonWicket}>Non-Striker Wicket</button>
+                <button className='two' onClick={Two}>2Run</button>
+                <button className='three' onClick={Three}>3Run</button>
             </div>
         </div>
     )
