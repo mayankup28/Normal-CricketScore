@@ -59,6 +59,17 @@ function ScoreCard() {
         }
     }
 
+    function Dot(){
+        if (ball === 5) {
+            Setover(over + 1)
+            Setball(0)
+            Setstriker(nonStriker)
+            Setnonstriker(striker)
+        } else {
+            Setball(ball + 1)
+        }
+    }
+
 
     function Two(){
         Setrun(run + 2)
@@ -226,28 +237,29 @@ function ScoreCard() {
 
             <div className={click?"extra active":"extra"}>
                 <div className="leftmenu">
-                <button onClick={Wide}>Wide</button>
-                <button onClick={Noball}>No-ball</button>
-                <button disabled={wicket === num-1} onClick={Wicket}>Wicket</button>
-                <button disabled={wicket === num-1} onClick={NonWicket}>Non-Striker Wicket</button>
                 <button onClick={MinusRun}>Run-1</button>
-                </div>
-
-                <div className="rightmenu">
                 <button onClick={MinusWicket}>Wicket-1</button>
                 <button onClick={MinusSix}>Six-1</button>
                 <button onClick={MinusFour}>Four-1</button>
                 <button onClick={Balls}>Ball-1</button>
                 <button onClick={Overs}>Over-1</button>
                 </div>
+
+                <div className="rightmenu">
+                <button onClick={Wide}>Wide</button>
+                <button onClick={Noball}>No-ball</button>
+                <button disabled={wicket === num-1} onClick={Wicket}>Wicket</button>
+                <button disabled={wicket === num-1} onClick={NonWicket}>Non-Striker Wicket</button>
+                <button onClick={Six}>6</button>
+                </div>
             </div>
 
             <div className="function">
-                <button className='single' onClick={Single}>Single</button>
-                <button className='four' onClick={Four}>Four</button>
-                <button className='six' onClick={Six}>Six</button>
-                <button className='two' onClick={Two}>2Run</button>
-                <button className='three' onClick={Three}>3Run</button>
+                <button className='single' onClick={Single}>1</button>
+                <button className='four' onClick={Four}>4</button>
+                <button className='dots' onClick={Dot}>Dotball</button>
+                <button className='two' onClick={Two}>2</button>
+                <button className='three' onClick={Three}>3</button>
             </div>
         </div>
     )

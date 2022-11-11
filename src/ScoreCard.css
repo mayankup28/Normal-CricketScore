@@ -74,11 +74,11 @@
     background-color: rgb(52, 223, 39);
 }
 
-.function .six {
+.function .dots {
     background-color: orange;
 }
 
-.function .six:hover {
+.function .dots:hover {
     background-color: rgb(224, 155, 28);
 }
 
@@ -158,7 +158,7 @@
         left: 10px;
     }
 
-    .six h1{
+    .dots h1{
         margin-left: 12px;
     }
 
