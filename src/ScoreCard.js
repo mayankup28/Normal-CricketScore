@@ -259,7 +259,7 @@ function ScoreCard() {
                 <button className='four' onClick={Four}>4</button>
                 <button className='dots' onClick={Dot}>Dotball</button>
                 <button className='two' onClick={Two}>2</button>
-                <button className='three' onClick={Three}>3</button>
+                <button style={{backgroundColor: "orange"}} className='three' onClick={Three}>3</button>
             </div>
         </div>
     )

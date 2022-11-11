@@ -74,14 +74,6 @@
     background-color: rgb(52, 223, 39);
 }
 
-.function .six {
-    background-color: orange;
-}
-
-.function .six:hover {
-    background-color: rgb(224, 155, 28);
-}
-
 .function .two{
     background-color: greenyellow;
 }
