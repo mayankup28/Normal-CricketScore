@@ -196,7 +196,7 @@ function ScoreCard() {
                     <h2>{wicket}</h2>
                 </div>
 
-                <div className="six">
+                <div className="sixs">
                     <h1 style={{color: "orange"}}>Six</h1>
                     <h2>{six}</h2>
                 </div>
